@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Gmail</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>Mini Gmail</header>
+
+<div class="tabs">
+  <div class="tab active" onclick="showTab('inbox')">Boîte de réception</div>
+  <div class="tab" onclick="showTab('ham')">Non Spam (HAM)</div>
+  <div class="tab" onclick="showTab('spam')">Spam</div>
+</div>
+
+<main id="mailContainer"></main>
+
+<div class="bot-icon" onclick="toggleChat()">🤖</div>
+<div class="chat-container" id="chatContainer">
+  <div class="chat-header">Chatbot Spam/Ham</div>
+  <div class="chat-messages" id="chatMessages">
+    <div class="message bot">Bonjour ! Collez un email à analyser.</div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Tapez ici..." />
+    <button onclick="sendMessage()">Envoyer</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

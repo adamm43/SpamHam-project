@@ -1,0 +1,19 @@
+body { margin: 0; font-family: Arial, sans-serif; background-color: #f1f3f4; }
+header { background-color: #4285F4; color: white; padding: 15px 20px; font-size: 20px; font-weight: bold; }
+.tabs { display: flex; background: white; border-bottom: 2px solid #ddd; }
+.tab { padding: 14px 20px; cursor: pointer; font-weight: bold; border-bottom: 3px solid transparent; }
+.tab.active { border-bottom: 3px solid #4285F4; color: #4285F4; }
+main { padding: 20px; }
+.mail { background-color: white; margin-bottom: 10px; padding: 10px; border-radius: 5px; border-left: 4px solid #4285F4; }
+.spam-mail { border-left: 4px solid #d32f2f; background-color: #ffe6e6; }
+.ham-mail { border-left: 4px solid #4caf50; background-color: #e8ffe8; }
+.bot-icon { position: fixed; bottom: 20px; right: 20px; font-size: 50px; cursor: pointer; }
+.chat-container { position: fixed; bottom: 80px; right: 20px; width: 350px; max-height: 500px; background: white; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); display: none; flex-direction: column; }
+.chat-header { background-color: #0d47a1; color: white; padding: 15px; text-align: center; }
+.chat-messages { flex: 1; padding: 10px; overflow-y: auto; }
+.chat-input { display: flex; }
+.chat-input input { flex: 1; padding: 10px; border: none; }
+.chat-input button { background-color: #0d47a1; color: white; border: none; padding: 10px 15px; }
+.message { margin: 8px 0; padding: 8px 12px; border-radius: 12px; max-width: 80%; }
+.bot { background: #e1f5fe; }
+.user { background: #c8e6c9; align-self: flex-end; }
